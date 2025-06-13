@@ -1,0 +1,77 @@
+My project offers a simple UI for training AI.
+I studied on provide short and fast implementation of AI.
+There are unique functions those are defined by me.
+"add_layer()"
+"ai_train()"
+"create_matrix()"
+"erase()"
+"erase_layer()"
+"load_model()"
+"loss()"
+"read_matrix()"
+"new_model()"
+"matrix_reshape()"
+"models_function()"
+"predict()"
+"save_model()"
+"set_layer()"
+"shape()"
+"_size()"
+"write_matrix()"
+"transform_layer()"
+
+Users can use my program with these functions
+There is a string support for perceive simple errors, Comment lines , Run Lines
+Comment lines can initialize with "#" symbol
+If there is a "\" symbol after "#" this means that line runs only.
+For compile all code there is a run button
+There are file operations in my program
+
+I used different approach that try to provide general structure for different data types. But it didn't satisfy my desire
+There is a simple syntax like function( object , value.........) actually object part is same for all functions other parts are various
+I started this project after watched 3B1B Neural Networks videos so this project is generally product of imagination.
+After studying Machine Learning course I noticed this project sufficient for good AI project so it was a good way for learning and creating new things.
+This program's mainline is completed. Except of mainline there are some missing like unnecessary(death) functions and can not sufficient for perform some cases.
+I abandoned this project because Qt and Cuda can't work with so this prevent my goals on this project also in ML course I learned different things. So I want to
+start new project that will provide my missing in this project.
+I will create own library in c++ or another language.
+
+Additionally I didn't control for any memory leaks on valgrind but there wasn't errors as I see.
+
+Sample codes:
+---------------------------------
+create_matrix(i,40, 5, 0 ,40)
+read_matrix(i ,C:\Users\Lenovo\Desktop\Ai_Compieler\input.txt) # My file path for input.txt you can reach this or others txt in that project file
+create_matrix(o,40, 1, 0 ,40)
+read_matrix(o , C:\Users\Lenovo\Desktop\Ai_Compieler\output.txt)
+new_model(model , i ,o , 40 , 1,1)
+add_layer(model, 8 , 5,1)
+ai_train(model, tanh , 8)
+predict(model, 1, 2, 3, 4, 5)
+predict(model, 6, 7, 8, 9, 10)
+predict(model, 11, 12, 13, 14, 15)
+predict(model, 16, 17, 18, 19, 20)
+predict(model, 21, 22, 23, 24, 25)
+predict(model, 26, 27, 28, 29, 30)
+predict(model, 31, 32, 33, 34, 35)
+predict(model, 36, 37, 38, 39, 1)
+predict(model, 2, 3, 4, 5, 6)
+predict(model, 7, 8, 9, 10, 11)
+predict(model, 12, 13, 14, 15, 16)
+predict(model, 17, 18, 19, 20, 21)
+predict(model, 22, 23, 24, 25, 26)
+predict(model, 27, 28, 29, 30, 31)
+predict(model, 32, 33, 34, 35, 36)
+predict(model, 37, 38, 39, 1, 2)
+predict(model, 3, 4, 5, 6, 7)
+predict(model, 8, 9, 10, 11, 12)
+predict(model, 13, 14, 15, 16, 17)
+predict(model, 18, 19, 20, 21, 22)
+---------------------------------
+create_matrix(i,40, 5, 0 ,40)
+read_matrix(i ,C:\Users\Lenovo\Desktop\Ai_Compieler\input.txt)
+create_matrix(o,40, 1, 0 ,40)
+read_matrix(o , C:\Users\Lenovo\Desktop\Ai_Compieler\output.txt)
+new_model(model , i ,o , 40 , 10,10 )
+load_model(model , C:\Users\Lenovo\Desktop\Ai_Compieler\model.txt)
+predict(model , 1,2,3,4,5)
